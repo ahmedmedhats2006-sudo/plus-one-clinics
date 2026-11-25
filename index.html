@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plus One Clinics</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f9ff; color: #222; }
+    header { background: #0a6ebd; color: #fff; text-align: center; padding: 40px 20px; }
+    section { max-width: 900px; margin: 30px auto; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .doctors { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .doctor { width: 250px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 16px; }
+    .lang-btn { position: fixed; top: 15px; left: 15px; background: #fff; color: #0a6ebd; border: 2px solid #0a6ebd; border-radius: 20px; padding: 6px 14px; cursor: pointer; }
+    .en { display: none; }
+    body.english .en { display: block; }
+    body.english .ar { display: none; }
+    body.english { direction: ltr; }
+    footer { text-align: center; padding: 20px; color: #666; }
+  </style>
+</head>
+<body>
+
+<button class="lang-btn" onclick="document.body.classList.toggle('english')">عربي / English</button>
+
+<header>
+  <h1>Plus One Clinics</h1>
+  <p class="ar">كلينكات بلس وان للأنف والأذن والحنجرة</p>
+  <p class="en">Plus One Clinics: Ear, Nose and Throat Care</p>
+</header>
+
+<section>
+  <h2 class="ar">الدكاترة</h2>
+  <h2 class="en">Our Doctors</h2>
+  <div class="doctors">
+    <div class="doctor">
+      <h3 class="ar">أ.د. محمد جميل حامد</h3>
+      <h3 class="en">Prof. Dr. Mohamed Gamil Hamed</h3>
+      <p class="ar">استشاري جراحة أنف وأذن وحنجرة وجراحات قاعدة الجمجمة</p>
+      <p class="en">Consultant ENT and Skull Base Surgery</p>
+    </div>
+    <div class="doctor">
+      <h3 class="ar">د. أحمد مدحت الشافعي</h3>
+      <h3 class="en">Dr. Ahmed Medhat El-Shafei</h3>
+      <p class="ar">استشاري أنف وأذن وحنجرة، وجراحات تجميل الأنف</p>
+      <p class="en">Consultant ENT and Rhinoplasty Surgery</p>
+    </div>
+    <div class="doctor">
+      <h3 class="ar">أ.د. داليا ياسين</h3>
+      <h3 class="en">Prof. Dr. Dalia Yassin</h3>
+      <p class="ar">استشاري طب التخاطب وجراحة الصوت</p>
+      <p class="en">Consultant Speech Therapy and Voice Surgery</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="ar">مواعيد الحجز قريباً</p>
+  <p class="en">Booking details coming soon</p>
+</footer>
+
+</body>
+</html>
